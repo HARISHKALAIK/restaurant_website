@@ -1,0 +1,107 @@
+.float-animate {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Smooth up and down floating motion */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* Common size for all chef images */
+.chef-card img {
+  height: 450px;       /* Adjust as needed */
+  width: 100%;         /* Ensures all images take full column width */
+  object-fit: cover;   /* Keeps aspect ratio and crops nicely */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover zoom animation */
+
+
+.as {
+    width: 100%;
+    height: 250px;   /* You can change to 300px or 350px if you want */
+    object-fit: cover;
+    border-radius: 10px;
+}
+.event-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+/* Hover effect */
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+/* animation effort */
+.left-box{
+    animation-name: slideleft;
+}
+.right-box{
+    animation-name: slideright;
+}
+ @keyframes slideleft{
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 
+.box{
+    
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.ab FaUserTie:hover{
+  color: #ffffff;
+}
+.abc:hover{
+  background-color: rgb(198, 196, 194);
+   box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+.bbox:hover{
+  color: #ffffff;
+  background-color: #ff5733;
+}
+.bbox{
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+.eventstext{
+  color: #ff5733;
+}
+.ab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  width: 300px;
+}
